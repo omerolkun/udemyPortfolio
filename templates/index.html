@@ -3,8 +3,16 @@
 {% block content %}
 {% include 'slider.html' %}
 
-  <title>Home</title>
-  <div class= "jumbutron">
-  <h2 class= 'text-center'>HOME PAGE </h2>
-  </div>
+<title>Home</title>
+<div class= "jumbutron">
+<h2 class= 'text-center'>HOME PAGE </h2>
+</div>
+
+<ul class= "list">
+  <h4>Thanks to</h4>
+  {% for x in thanks_to %}
+  <li class = 'list-item'> {{x}}</li>
+
+  {% endfor %}
+</ul>
   {% endblock %}
