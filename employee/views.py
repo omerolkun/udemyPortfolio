@@ -9,4 +9,5 @@ def employee(request):
     return HttpResponse("employee page")
 
 def profile(request):
-    return HttpResponse("profile page")
+    return render(request,"employee/profile.html")
+
