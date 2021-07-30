@@ -1,9 +1,16 @@
-YASA ANKARAGuc
+{% extends 'layouts.html' %}
+
+{% block content %}
 {% load static %}
+
+<h1 class= 'text-center'>HOME PAGE</h1>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
 
 <img src = "{% static 'beni.jpg' %}" height="200" width="200" alt = "benico">
 
 
 
 
-<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+{% endblock %}
